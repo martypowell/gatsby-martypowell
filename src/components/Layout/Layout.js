@@ -1,24 +1,19 @@
 // @flow strict
-import React from 'react';
-import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby';
-import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
-import styles from './Layout.module.scss';
+import React from "react";
+import Helmet from "react-helmet";
+import { withPrefix } from "gatsby";
+import type { Node as ReactNode } from "react";
+import { useSiteMetadata } from "../../hooks";
+import styles from "./Layout.module.scss";
 
 type Props = {
   children: ReactNode,
   title: string,
   description?: string,
-  socialImage? :string
+  socialImage?: string
 };
 
-const Layout = ({
-  children,
-  title,
-  description,
-  socialImage
-}: Props) => {
+const Layout = ({ children, title, description, socialImage }: Props) => {
   const { author, url } = useSiteMetadata();
   const metaImage = socialImage != null ? socialImage : author.photo;
   const metaImageUrl = url + withPrefix(metaImage);
@@ -35,6 +30,10 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        <link
+          href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700"
+          rel="stylesheet"
+        />
       </Helmet>
       {children}
     </div>
