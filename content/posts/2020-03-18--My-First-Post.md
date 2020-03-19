@@ -4,10 +4,10 @@ date: "2020-03-18T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "hello-world"
-category: "Hello World"
+category: "Gatsby"
 tags:
   - "Hello World"
-  - "Gatsby"
+
 description: "This is my first Gatsby blog entry. Let's see how this goes."
 socialImage: ""
 ---
@@ -38,4 +38,19 @@ I scanned the project structured and got lucky guessing that blog entires might 
 
 I copied one of the existing pages and modified it for my needs. If you couldn't figure out by now, this is the blog post I am writing now. After hopping back over to my localhost, my post was visible and I was able to see what content I had added so far #:raised_hands:. (I may have also installed emoji support at this point.)
 
+This was also a good point at which I did a famous `initial revision` commit and pushed up whatever changes I had made to [github](https://github.com/martypowell/gatsby-martypowell).
+
 ## Modifying Some Styles
+
+Next step was to change some of the styles. I figured I would try the following minor changes.
+
+- Change font families for headings and body text
+- Change link colors
+
+### Changing the Font Family
+
+After some search around, I found that `src\components\Layout` contained the head for the site. I added the google fonts link that I had hoped to use to that component and committed that change.
+
+Much to my liking there is was a variables file located at `src\assets\scss` which contained a variable called `$typographic-font-family`. I was able to add the font I wanted to be the default as the value for this variable. I noticed that there was not heading variable available, so I created on based on my heading font, and adjusted the `src\assets\scss\base\_generic.scss` to use that variable for headings instead of the default.
+
+That was it, font's updated.
