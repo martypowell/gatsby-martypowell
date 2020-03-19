@@ -4,6 +4,7 @@
   "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
   "main": "n/a",
   "scripts": {
+    "start": "npm run-script develop",
     "develop": "yarn run clean && gatsby develop",
     "build": "yarn run clean && gatsby build",
     "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
@@ -58,6 +59,7 @@
     "gatsby-plugin-sitemap": "^2.2.29",
     "gatsby-remark-autolink-headers": "^2.1.25",
     "gatsby-remark-copy-linked-files": "^2.1.39",
+    "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^3.1.49",
     "gatsby-remark-katex": "^3.1.25",
