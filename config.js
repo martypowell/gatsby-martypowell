@@ -4,11 +4,11 @@ module.exports = {
   url: "https://martypowell.com",
   pathPrefix: "/",
   title: "Blog by Marty Powell",
-  subtitle: "An experienced software developer, trying to keep things simple.",
-  copyright: "© All rights reserved.",
+  subtitle: "An experienced Software Engineer, trying to keep things simple.",
+  copyright: "",
   disqusShortname: "",
   postsPerPage: 4,
-  googleAnalyticsId: "UA-73379983-2",
+  googleAnalyticsId: "",
   useKatex: false,
   menu: [
     {
@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: "Marty Powell",
     photo: "/photo.jpg",
-    bio: "An experienced software developer, trying to keep things simple.",
+    bio: "An experienced Software Engineer, trying to keep things simple.",
     contacts: {
       email: "jpowel25@gmail.com",
       facebook: "",

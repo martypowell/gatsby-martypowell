@@ -10,10 +10,10 @@ My name is Marty Powell and I have over 10 years of experience as a Software Eng
 
 ## Professional
 
-More to come in the next few weeks.
+#:construction: More to come in the next few weeks.
 
 ## Personal
 
-More to come in the next few weeks.
+#:construction_worker: More to come in the next few weeks.
 
 ![The Powell Dogs](/media/dogs.png)
