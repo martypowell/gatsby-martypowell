@@ -100,13 +100,18 @@ hr {
 }
 
 a {
-  color: $typographic-link-p-font-color;
-  text-decoration: none;
+  color: $link-color;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
 
   &:hover,
   &:focus,
   &:active {
-    color: $typographic-link-s-font-color;
+    color: $link-hover-color;
   }
 }
 
@@ -171,4 +176,12 @@ figcaption {
   .float-left {
     float: left;
   }
+}
+
+/* based on github's code styling */
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
 }
