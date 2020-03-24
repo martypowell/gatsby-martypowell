@@ -27,7 +27,7 @@ module.exports = {
   ],
   author: {
     name: "Marty Powell",
-    photo: "/photo.jpg",
+    photo: "https://martypowell.com/img/profile.jpg",
     bio:
       "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
     contacts: {

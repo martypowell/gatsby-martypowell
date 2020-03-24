@@ -53,4 +53,4 @@ After some search around, I found that `src\components\Layout` contained the hea
 
 Much to my liking there is was a variables file located at `src\assets\scss` which contained a variable called `$typographic-font-family`. I was able to add the font I wanted to be the default as the value for this variable. I noticed that there was not heading variable available, so I created on based on my heading font, and adjusted the `src\assets\scss\base\_generic.scss` to use that variable for headings instead of the default.
 
-That was it, font's updated.
+That was it, fonts updated.
